@@ -1,3 +1,12 @@
+/* Fonts */
+
+/* Colors */
+  /* background: #121212; Black Background */
+  /* background: #0085FF; Blue Player1 */
+  /* background: #00BA34; Green Player2 */
+  /* background: #BF66E5; Purple Game Pieces and Header */
+  /* background: #FFFFFF; White All other Text*/
+
 /* Body */
 body {
   background: #212121;
@@ -10,15 +19,6 @@ img {
   filter: invert(98%) sepia(0%) saturate(7500%) hue-rotate(148deg) brightness(112%) contrast(101%);
   margin: 10px;
 }
-
-/* Fonts */
-
-/* Colors */
-/* background: #121212; Black Background */
-/* background: #0085FF; Blue Player1 */
-/* background: #00BA34; Green Player2 */
-/* background: #BF66E5; Purple Game Pieces and Header */
-/* background: #FFFFFF; White All other Text*/
 
 /* Shared Flex Layouts */
 header,
