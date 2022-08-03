@@ -1,6 +1,16 @@
 /* Body */
+body {
+  background: #212121;
+  color: #FFFFFF;
+}
 /* Fonts */
+
 /* Colors */
+/* background: #121212; Black Background */
+/* background: #0085FF; Blue Player1 */
+/* background: #00BA34; Green Player2 */
+/* background: #BF66E5; Purple Game Pieces and Header */
+/* background: #FFFFFF; White All other Text*/
 
 /* Shared Flex Layouts */
 header,
@@ -30,11 +40,11 @@ main {
 .game-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-gap: 20px;
 }
 
 button {
-  background: blue;
+  background: #BF66E5;
   border: 0px;
   width: 60px;
   height: 60px;
