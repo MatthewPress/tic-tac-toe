@@ -3,6 +3,14 @@ body {
   background: #212121;
   color: #FFFFFF;
 }
+
+img {
+  width: 7%;
+  height: 7%;
+  filter: invert(98%) sepia(0%) saturate(7500%) hue-rotate(148deg) brightness(112%) contrast(101%);
+  margin: 10px;
+}
+
 /* Fonts */
 
 /* Colors */
@@ -23,10 +31,6 @@ article,
 }
 
 /* Header */
-img {
-  width: 5%;
-  height: 5%;
-}
 
 /* Main */
 main {
