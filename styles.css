@@ -8,7 +8,8 @@ main {
   grid-template-columns: 1fr 3fr 1fr;
 }
 /* Player Articles */
-article {
+article,
+.game {
   display: flex;
   flex-direction: column;
   justify-content: center;
