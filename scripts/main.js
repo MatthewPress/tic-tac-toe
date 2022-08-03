@@ -1,14 +1,11 @@
 // Iteration 0: On First load
-  // two players are created
-  // one game is created
-  // protect both inside and on load event listener and handler
-  // players are put in the game object instance
-  // Output (querySelector) players and win count
   // Determine (game method) whose turn it is
   // Output (querySelector) player's turn
 
 // ***** Selectors *****
-
+// var playerOne = document.querySelector('.player-one');
+// var playerTwo = document.querySelector('.player-two');
+var turnDisplay = document.querySelector('.game-turn-display');
 // ***** Data *****
 var currentGame = createGame()
 
@@ -18,7 +15,7 @@ window.addEventListener('load', displayGameData);
 // ***** Event Handlers *****
 function createGame() {
   var player1 = new Player(0, token);
-  var player2 = new Player(0, token);
+  var player2 = new Player(1, token);
   var createdGame = new Game();
   console.log (player1, player2, createdGame);
 
@@ -29,5 +26,15 @@ function createGame() {
 }
 
 function displayGameData() {
-  
+  // playerOne h4 element is the currentGame.players[0].token
+  // playerOne p element is `Wins: ${currentGame.players[0].wins}`
+
+  // playerTwo h4 element is the currentGame.players[1].token
+  // playerTwo p element is `Wins: ${currentGame.players[1].wins}`
+
+  updateTurnDisplay();
+}
+
+function updateTurnDisplay() {
+  // turnDisplay innerText is `Turn: ${currentGame.turn}`
 }
