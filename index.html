@@ -11,41 +11,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <div class="page-grid">
-      <header class="page-item">
-        <h1>Grids</h1>
-        <button class="audio-control">
-          <img src="assets/images/volume-high-solid.svg" alt="Audio Control" />
-        </button>
-      </header>
-      <section class="page-item">
-        <!-- Turn: emoji  or Won: emoji -->
-        <h2>Welcome</h2>
-      </section>
-      <article class="page-item">
+    <header>
+      <h1>It comes in Waves</h1>
+      <button class="audio-control">
+        <img src="assets/images/volume-high-solid.svg" alt="Audio Control" />
+      </button>
+    </header>
+    <main>
+      <article class="player1">
         <!-- Player 1 emoji and # of wins -->
         <h4>&#x1F7EA;</h4>
         <p></p>
       </article>
-      <main class="page-item game-container">
+      <section class="game">
+        <!-- Turn: emoji  or Won: emoji -->
+        <h2 class="game-turn-display">Welcome</h2>
         <div class="game-grid">
-          <button class="game-item">&#x1F7E6;</button>
-          <button class="game-item">&#x1F7E6;</button>
-          <button class="game-item">&#x1F7E6;</button>
-          <button class="game-item">&#x1F7E6;</button>
-          <button class="game-item">&#x1F7E6;</button>
-          <button class="game-item">&#x1F7E6;</button>
-          <button class="game-item">&#x1F7E6;</button>
-          <button class="game-item">&#x1F7E6;</button>
-          <button class="game-item">&#x1F7E6;</button>
+          <button class="game-grid-item">&#x1F7E6;</button>
+          <button class="game-grid-item">&#x1F7E6;</button>
+          <button class="game-grid-item">&#x1F7E6;</button>
+          <button class="game-grid-item">&#x1F7E6;</button>
+          <button class="game-grid-item">&#x1F7E6;</button>
+          <button class="game-grid-item">&#x1F7E6;</button>
+          <button class="game-grid-item">&#x1F7E6;</button>
+          <button class="game-grid-item">&#x1F7E6;</button>
+          <button class="game-grid-item">&#x1F7E6;</button>
         </div>
-      </main>
-      <article class="page-item">
+      </section>
+      <article class="player2">
         <!-- Player 2 emoji and # of wins -->
         <h4>&#x1F7E9;</h4>
         <p></p>
       </article>
-    </div>
+    </main>
     <script src="scripts/player.js"></script>
     <script src="scripts/game.js"></script>
     <script src="scripts/main.js"></script>
