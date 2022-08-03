@@ -18,9 +18,10 @@ window.addEventListener('load', createGame);
 function createGame() {
   var player1 = new Player(0, token);
   var player2 = new Player(0, token);
-  console.log (player1);
   var currentGame = new Game();
+  console.log (player1, player2, currentGame);
 
   currentGame.players.push(player1);
   currentGame.players.push(player2);
+  console.log (currentGame, currentGame.players);
 }
