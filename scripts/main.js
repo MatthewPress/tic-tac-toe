@@ -26,16 +26,16 @@ function createGame() {
 
   createdGame.setTurn();
   console.log (createdGame, createdGame.players);
-  
+
   return createdGame;
 }
 
 function displayGameData() {
-  // playerOne h4 element is the currentGame.players[0].token
-  // playerOne p element is `Wins: ${currentGame.players[0].wins}`
+  playerOneToken.innerText = currentGame.players[0].token;
+  playerOneWins.innerText = `Wins: ${currentGame.players[0].wins}`;
 
-  // playerTwo h4 element is the currentGame.players[1].token
-  // playerTwo p element is `Wins: ${currentGame.players[1].wins}`
+  playerTwoToken.innerText = currentGame.players[1].token;
+  playerTwoWins.innerText = `Wins: ${currentGame.players[1].wins}`;
 
   updateTurnDisplay();
 }
