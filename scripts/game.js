@@ -33,8 +33,9 @@ class Game {
   }
 
   resetGame() {
-    // changeTurnTracker(this.startingTurn);
-    // this.currentTurn = this.startingTurn;
+    changeTurnTracker(this.startingTurn);
+    this.currentTurn = this.startingTurn;
+    
     // gameState reset
   }
 }
