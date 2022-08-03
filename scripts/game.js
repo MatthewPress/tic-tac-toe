@@ -1,12 +1,18 @@
 class Game {
   constructor() {
     this.players = [];
-    this.currentGame = [];
-    this.turn = this.players[0].id;
+    this.gameState = [];
+    // this.startingTurn;
+    // this.currentTurn;
+  }
+
+  setTurn() {
+    this.startingTurn = this.players[0];
+    this.currentTurn = this.startingTurn;
   }
 
   trackGame() {
-    
+
   }
 
   trackTurn() {
