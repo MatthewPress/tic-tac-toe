@@ -45,9 +45,14 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
+  width: 210px;
+  height: 183px;
 }
 
-h2 {
+button {
+  font-size: 3em;
+  background: transparent;
   padding: 0px;
+  border: 0px;
   margin: 0px;
 }
