@@ -29,13 +29,18 @@ class Game {
   }
 
   checkOutcome() {
-
+    // Maybe add parameter so only one if statement is needed
+      // if (player 1 wins) {}
+      // if (player 2 wins) {}
+      // if (draw) {}
+    // delay
+    resetGame()
   }
 
   resetGame() {
     changeTurnTracker(this.startingTurn);
     this.currentTurn = this.startingTurn;
-    
+
     // gameState reset
   }
 }
