@@ -3,6 +3,13 @@
   // Switch players after turn
   // Update turnDisplay
 
+// I 4: Reset and new starting player
+  // Happens after brief pause
+  // Player win count increases in a function separate from Reset
+  // startingTurn is switched in Data
+  // Reset gameState Data and Dom
+  // Update playerWin count in Dom
+
 // ***** Selectors *****
 var playerOneToken = document.querySelector('.player-one-token');
 var playerOneWins = document.querySelector('.player-one-wins');
