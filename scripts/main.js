@@ -9,7 +9,7 @@ var playerOneWins = document.querySelector('.player-one-wins');
 var playerTwoToken = document.querySelector('.player-two-token');
 var playerTwoWins = document.querySelector('.player-two-wins');
 var turnDisplay = document.querySelector('.game-turn-display');
-var gameGridItems = document.querySelectorAll('.game-grid-item');
+var gameGridSpaces = document.querySelectorAll('.game-grid-space');
 
 // ***** Data *****
 var currentGame = createGame();
@@ -48,6 +48,6 @@ function updateTurnDisplay() {
 
 function updateGameDisplay() {
   for (var i = 0; i < currentGame.gameState.length; i++) {
-    gameGridItems[i].innerText = currentGame.gameState[i];
+    gameGridSpaces[i].innerText = currentGame.gameState[i];
   }
 }
