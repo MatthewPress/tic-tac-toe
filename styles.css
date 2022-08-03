@@ -1,13 +1,9 @@
 /* Body */
 /* Fonts */
 /* Colors */
-/* Header */
-/* Main */
-main {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-}
-/* Player Articles */
+
+/* Shared Layouts */
+header,
 article,
 .game {
   display: flex;
@@ -15,4 +11,14 @@ article,
   justify-content: center;
   align-items: center;
 }
+
+/* Header */
+
+/* Main */
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+/* Player Articles */
+
 /* Game Section */
