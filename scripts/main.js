@@ -23,7 +23,10 @@ function createGame() {
 
   createdGame.players.push(player1);
   createdGame.players.push(player2);
+
+  createdGame.setTurn();
   console.log (createdGame, createdGame.players);
+  
   return createdGame;
 }
 
@@ -38,5 +41,5 @@ function displayGameData() {
 }
 
 function updateTurnDisplay() {
-  turnDisplay.innerText = `Turn: ${currentGame.currentTurn.token}`
+  turnDisplay.innerText = `Turn: ${currentGame.currentTurn.token}`;
 }
