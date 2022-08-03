@@ -3,8 +3,10 @@
   // Output (querySelector) player's turn
 
 // ***** Selectors *****
-// var playerOne = document.querySelector('.player-one');
-// var playerTwo = document.querySelector('.player-two');
+var playerOneToken = document.querySelector('.player-one-token');
+var playerOneWins = document.querySelector('.player-one-wins');
+var playerTwoToken = document.querySelector('.player-two-token');
+var playerTwoWins = document.querySelector('.player-two-wins');
 var turnDisplay = document.querySelector('.game-turn-display');
 // ***** Data *****
 var currentGame = createGame();
