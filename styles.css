@@ -2,7 +2,7 @@
 /* Fonts */
 /* Colors */
 
-/* Shared Layouts */
+/* Shared Flex Layouts */
 header,
 article,
 .game {
@@ -13,6 +13,10 @@ article,
 }
 
 /* Header */
+img {
+  width: 5%;
+  height: 5%;
+}
 
 /* Main */
 main {
@@ -27,4 +31,11 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
+}
+
+button {
+  background: blue;
+  border: 0px;
+  width: 60px;
+  height: 60px;
 }
