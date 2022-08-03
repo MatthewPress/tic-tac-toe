@@ -29,7 +29,7 @@ class Game {
   }
 
   checkOutcome() {
-    // Maybe add parameter so only one if statement is needed
+    // Maybe need "winner" parameter
       // if (player 1 wins) {}
       // if (player 2 wins) {}
       // if (draw) {}
