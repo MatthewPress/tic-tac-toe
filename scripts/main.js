@@ -1,5 +1,5 @@
 // I 1: Player's turn
-  // player's token fills gameboard 
+  // player's token fills gameboard
   // Switch players after turn
   // Update turnDisplay
 
@@ -9,6 +9,7 @@ var playerOneWins = document.querySelector('.player-one-wins');
 var playerTwoToken = document.querySelector('.player-two-token');
 var playerTwoWins = document.querySelector('.player-two-wins');
 var turnDisplay = document.querySelector('.game-turn-display');
+var gameGridItems = document.querySelectorAll('.game-grid-item');
 
 // ***** Data *****
 var currentGame = createGame();
@@ -38,8 +39,15 @@ function displayGameData() {
   playerTwoWins.innerText = `Wins: ${currentGame.players[1].wins}`;
 
   updateTurnDisplay();
+  updateGameDisplay();
 }
 
 function updateTurnDisplay() {
   turnDisplay.innerText = `Turn: ${currentGame.currentTurn.token}`;
+}
+
+function updateGameDisplay() {
+  for (var i = 0; i < currentGame.gameState.length; i++) {
+    gameGridItems[i].innerText = currentGame.gameState[i];
+  }
 }
