@@ -1,5 +1,7 @@
 // I 1: Player's turn
-  // 
+  // player's token fills gameboard 
+  // Switch players after turn
+  // Update turnDisplay
 
 // ***** Selectors *****
 var playerOneToken = document.querySelector('.player-one-token');
