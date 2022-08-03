@@ -38,5 +38,5 @@ function displayGameData() {
 }
 
 function updateTurnDisplay() {
-  // turnDisplay innerText is `Turn: ${currentGame.turn}`
+  turnDisplay.innerText = `Turn: ${currentGame.currentTurn.token}`
 }
