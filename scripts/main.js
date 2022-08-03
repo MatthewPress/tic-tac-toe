@@ -14,8 +14,8 @@ window.addEventListener('load', displayGameData);
 
 // ***** Event Handlers *****
 function createGame() {
-  var player1 = new Player(0, token);
-  var player2 = new Player(1, token);
+  var player1 = new Player(0, "🟩");
+  var player2 = new Player(1, "🟦");
   var createdGame = new Game();
   console.log (player1, player2, createdGame);
 
