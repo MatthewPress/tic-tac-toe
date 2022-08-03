@@ -7,7 +7,7 @@
 // var playerTwo = document.querySelector('.player-two');
 var turnDisplay = document.querySelector('.game-turn-display');
 // ***** Data *****
-var currentGame = createGame()
+var currentGame = createGame();
 
 // ***** Event Listeners *****
 window.addEventListener('load', displayGameData);
