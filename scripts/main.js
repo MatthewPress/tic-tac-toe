@@ -10,18 +10,24 @@
 // ***** Selectors *****
 
 // ***** Data *****
+var currentGame = createGame()
 
 // ***** Event Listeners *****
-window.addEventListener('load', createGame);
+window.addEventListener('load', displayGameData);
 
 // ***** Event Handlers *****
 function createGame() {
   var player1 = new Player(0, token);
   var player2 = new Player(0, token);
-  var currentGame = new Game();
-  console.log (player1, player2, currentGame);
+  var createdGame = new Game();
+  console.log (player1, player2, createdGame);
 
-  currentGame.players.push(player1);
-  currentGame.players.push(player2);
-  console.log (currentGame, currentGame.players);
+  createdGame.players.push(player1);
+  createdGame.players.push(player2);
+  console.log (createdGame, createdGame.players);
+  return createdGame;
+}
+
+function displayGameData() {
+  
 }
