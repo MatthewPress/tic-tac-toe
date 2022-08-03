@@ -18,6 +18,8 @@ class Game {
     else if (this.startingTurn === this.players[1]) {
       this.startingTurn = this.players[0];
     }
+    
+    this.currentTurn = this.startingTurn;
   }
 
   trackGame() {

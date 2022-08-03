@@ -1,3 +1,6 @@
+// I 1: Player's turn
+  // 
+
 // ***** Selectors *****
 var playerOneToken = document.querySelector('.player-one-token');
 var playerOneWins = document.querySelector('.player-one-wins');
