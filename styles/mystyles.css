@@ -1,0 +1,55 @@
+/* Fonts */
+
+/* Colors */
+  /* background: #121212; Black Background */
+  /* background: #0085FF; Blue Player1 */
+  /* background: #00BA34; Green Player2 */
+  /* background: #BF66E5; Purple Game Pieces and Header */
+  /* background: #FFFFFF; White All other Text*/
+
+/* Body */
+body {
+  background: #212121;
+  color: #FFFFFF;
+}
+
+img {
+  width: 7%;
+  height: 7%;
+  filter: invert(98%) sepia(0%) saturate(7500%) hue-rotate(148deg) brightness(112%) contrast(101%);
+  margin: 20px;
+}
+
+/* Shared Flex Layouts */
+header,
+article,
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header */
+
+/* Main */
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+/* Player Articles */
+
+/* Game Section */
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+button {
+  background: #BF66E5;
+  border: 0px;
+  width: 60px;
+  height: 60px;
+}
