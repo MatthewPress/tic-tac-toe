@@ -6,20 +6,18 @@ class Game {
     // this.currentTurn;
   }
 
-  setTurn() {
+  setTurnTrackers() {
     this.startingTurn = this.players[0];
     this.currentTurn = this.startingTurn;
   }
 
-  changeStartingTurn() {
-    if (this.startingTurn === this.players[0]) {
-      this.startingTurn = this.players[1];
+  changeTurnTracker(turnTracker) {
+    if (turnTracker === this.players[0]) {
+      turnTracker = this.players[1];
     }
-    else if (this.startingTurn === this.players[1]) {
-      this.startingTurn = this.players[0];
+    else if (turnTracker === this.players[1]) {
+      turnTracker = this.players[0];
     }
-
-    this.currentTurn = this.startingTurn;
   }
 
   trackGame() {
@@ -35,6 +33,8 @@ class Game {
   }
 
   resetGame() {
-
+    // changeTurnTracker(this.startingTurn);
+    // this.currentTurn = this.startingTurn;
+    // gameState reset
   }
 }

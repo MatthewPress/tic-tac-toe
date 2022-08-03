@@ -33,7 +33,7 @@ function createGame() {
   createdGame.players.push(player1);
   createdGame.players.push(player2);
 
-  createdGame.setTurn();
+  createdGame.setTurnTrackers();
 
   return createdGame;
 }
