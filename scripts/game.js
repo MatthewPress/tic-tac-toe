@@ -53,17 +53,35 @@ class Game {
 
   winReset() {
     console.log("Win");
+    // call players increaseWin()
+    // DOM: Display winner
+    // resetGame();
   }
 
   drawReset() {
     console.log("Draw");
+    // DOM: Display Draw
+    // resetGame();
   }
 
   resetGame() {
-    changeTurnTracker(this.startingPlayer);
-    this.currentPlayer = this.startingPlayer;
+    // DATA
+      // delay
+      // reset gameState
+      // reset turnCount
+      // switch startingPlayer
+        // update currentPlayer w/ startingPlayer
+        // repurpose code from startGame()
 
-    // gameState reset
+    // DOM
+      // Reset button emojis
+      // Display players' win counts
+      // Display turn
+
+    // this.turnCount = 0;
+    // for (var i = 0; i > this.gameState)
+    // changeTurnTracker(this.startingPlayer);
+    // this.currentPlayer = this.startingPlayer;
   }
 
   setTurnTrackers() {
