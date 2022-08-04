@@ -2,6 +2,7 @@ class Game {
   constructor() {
     this.players = [];
     this.gameState = ["🟪", "🟪", "🟪", "🟪", "🟪", "🟪", "🟪", "🟪", "🟪"];
+    this.turnCount = 0;
     // this.startingPlayer;
     // this.currentPlayer;
   }
@@ -27,6 +28,7 @@ class Game {
 
   trackGame(spaceIndex) {
     this.gameState[spaceIndex] = this.currentPlayer.token;
+    this.turnCount++;
     this.trackPlayerSpaces(spaceIndex);
     this.checkOutcome();
     this.changeTurnTracker(this.currentPlayer);
@@ -43,10 +45,9 @@ class Game {
       if (joinedSpaces.includes(winningConditions[i])) {
         this.winReset();
       }
-    }
-
-    for (var i = 0; i < this.gameState.length; i++) {
-      if (this.gameState) {}
+      else if (this.turnCount === 9) {
+        this.drawReset();
+      }
     }
   }
 
