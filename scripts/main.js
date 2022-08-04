@@ -1,12 +1,15 @@
-// I 1: Player's turn
-  // player's token fills gameboard
-  // Switch players after turn
-  // Update turnDisplay
+// I 2: Check for Win
+  // check board for win condition
+  // An array holding arrays of win conditions
+  // Maybe turn this into an object for some type of looping
+  // search the gameState array for every index that a player's emoji exists
+  // put index positions in new array for each player
+  // check if the players' index array INCLUDES an array from the first point
 
 // I 4: Reset and new starting player
   // Happens after brief pause
   // Player win count increases in a function separate from Reset
-  // startingTurn is switched in Data
+  // startingPlayer is switched in Data
   // Reset gameState Data and Dom
   // Update playerWin count in Dom
 
@@ -16,24 +19,21 @@ var playerOneWins = document.querySelector('.player-one-wins');
 var playerTwoToken = document.querySelector('.player-two-token');
 var playerTwoWins = document.querySelector('.player-two-wins');
 var turnDisplay = document.querySelector('.game-turn-display');
+var gameGrid = document.querySelector('.game-grid');
 var gameGridSpaces = document.querySelectorAll('.game-grid-space');
 
 // ***** Data *****
 var currentGame = createGame();
+var winningConditions = ["012", "345", "678", "036", "147", "258", "048", "246"];
 
 // ***** Event Listeners *****
 window.addEventListener('load', displayGameData);
+gameGrid.addEventListener('click', playersTurn);
 
 // ***** Event Handlers *****
 function createGame() {
-  var player1 = new Player(0, "🟩");
-  var player2 = new Player(1, "🟦");
   var createdGame = new Game();
-
-  createdGame.players.push(player1);
-  createdGame.players.push(player2);
-
-  createdGame.setTurnTrackers();
+  createdGame.startGame();
 
   return createdGame;
 }
@@ -50,11 +50,26 @@ function displayGameData() {
 }
 
 function updateTurnDisplay() {
-  turnDisplay.innerText = `Turn: ${currentGame.currentTurn.token}`;
+  turnDisplay.innerText = `Turn: ${currentGame.currentPlayer.token}`;
 }
 
 function updateGameDisplay() {
   for (var i = 0; i < currentGame.gameState.length; i++) {
     gameGridSpaces[i].innerText = currentGame.gameState[i];
+  }
+}
+
+function playersTurn(event) {
+  if (!event.target.disable) {
+    for (var i = 0; i < gameGridSpaces.length; i++) {
+      if (gameGridSpaces[i].classList === event.target.classList) {
+        currentGame.trackGame(i);
+        // Need to change all disables to false on reset
+        event.target.disable = true;
+
+        updateGameDisplay();
+        updateTurnDisplay();
+      }
+    }
   }
 }
