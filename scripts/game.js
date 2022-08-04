@@ -70,7 +70,7 @@ console.log(this.currentPlayer.token, joinedSpaces);
   }
 
   drawReset() {
-    // DOM: Display Draw
+    displayDraw();
     setTimeout(resetGame, 3000);
   }
 
