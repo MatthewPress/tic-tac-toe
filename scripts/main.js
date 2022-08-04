@@ -67,13 +67,11 @@ function playersTurn(event) {
   if (!event.target.disable) {
     for (var i = 0; i < gameGridSpaces.length; i++) {
       if (gameGridSpaces[i].classList === event.target.classList) {
-        currentGame.gameState[i] = currentGame.currentTurn.token;
+        currentGame.trackTurn(i);
+        
         event.target.disable = true;
         // Need to change all disables to false on reset
-
         updateGameDisplay();
-
-        currentGame.changeTurnTracker(currentGame.currentTurn);
         updateTurnDisplay();
       }
     }
