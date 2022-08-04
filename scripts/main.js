@@ -1,6 +1,7 @@
 // I 2: Check for Win
   // check board for win condition
   // An array holding arrays of win conditions
+  // Maybe turn this into an object for some type of looping
   // search the gameState array for every index that a player's emoji exists
   // put index positions in new array for each player
   // check if the players' index array INCLUDES an array from the first point
@@ -8,7 +9,7 @@
 // I 4: Reset and new starting player
   // Happens after brief pause
   // Player win count increases in a function separate from Reset
-  // startingTurn is switched in Data
+  // startingPlayer is switched in Data
   // Reset gameState Data and Dom
   // Update playerWin count in Dom
 
@@ -53,7 +54,7 @@ function displayGameData() {
 }
 
 function updateTurnDisplay() {
-  turnDisplay.innerText = `Turn: ${currentGame.currentTurn.token}`;
+  turnDisplay.innerText = `Turn: ${currentGame.currentPlayer.token}`;
 }
 
 function updateGameDisplay() {
@@ -72,8 +73,6 @@ function playersTurn(event) {
 
         updateGameDisplay();
         updateTurnDisplay();
-
-        currentGame.checkWin();
       }
     }
   }
