@@ -77,12 +77,8 @@ console.log(this.currentPlayer.token, joinedSpaces);
   resetData() {
     for (var i = 0; i < this.gameState.length; i++) {
       this.gameState[i] = "🟪";
-    }
-
-    for (var k = 0; k < this.players.length; k++) {
-      for (var j = 0; j < this.players[k].spaces.length; j++) {
-        this.players[k].spaces.splice(j, 1);
-      }
+      this.players[0].spaces.splice(0, 1)
+      this.players[1].spaces.splice(0, 1)
     }
 
     this.turnCount = 0;
