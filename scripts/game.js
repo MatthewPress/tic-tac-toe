@@ -20,8 +20,13 @@ class Game {
     }
   }
 
-  checkWin() {
+  trackTurn(indexPosition) {
+    this.gameState[indexPosition] = this.currentTurn.token;
+    currentGame.changeTurnTracker(currentGame.currentTurn);
+  }
 
+  checkWin() {
+    
   }
 
   resetGame() {
@@ -32,10 +37,6 @@ class Game {
   }
 
   trackGame() {
-
-  }
-
-  trackTurn() {
 
   }
 }
