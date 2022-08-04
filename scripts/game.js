@@ -28,21 +28,30 @@ class Game {
   trackGame(spaceIndex) {
     this.gameState[spaceIndex] = this.currentPlayer.token;
     this.trackPlayerSpaces(spaceIndex);
-    this.checkWin();
+    this.checkOutcome();
     this.changeTurnTracker(this.currentPlayer);
   }
 
   trackPlayerSpaces(spaceIndex) {
     this.players[this.currentPlayer.id].spaces.push(spaceIndex);
-    console.log("unsorted", this.currentPlayer.spaces);
-    this.currentPlayer.spaces.sort();
-    console.log("sorted:", this.currentPlayer.spaces);
   }
 
-  checkWin() {
-    // compare the current player's spaces against the winningConditions
+  checkOutcome() {
+    var joinedSpaces = this.currentPlayer.spaces.join("");
 
+    for (var i = 0; i < winningConditions.length; i++) {
+      if (joinedSpaces.includes(winningConditions[i])) {
+        this.winReset();
+      }
+    }
 
+    for (var i = 0; i < this.gameState.length; i++) {
+      if (this.gameState) {}
+    }
+  }
+
+  winReset() {
+    console.log("Ding");
   }
 
   resetGame() {
