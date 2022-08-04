@@ -1,3 +1,10 @@
+// I 2: Check for Win
+  // check board for win condition
+  // An array holding arrays of win conditions
+  // search the gameState array for every index that a player's emoji exists
+  // put index positions in new array for each player
+  // check if the players' index array INCLUDES an array from the first point
+  
 // I 4: Reset and new starting player
   // Happens after brief pause
   // Player win count increases in a function separate from Reset

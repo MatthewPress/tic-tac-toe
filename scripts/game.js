@@ -20,15 +20,7 @@ class Game {
     }
   }
 
-  trackGame() {
-
-  }
-
-  trackTurn() {
-
-  }
-
-  checkOutcome() {
+  checkWin() {
 
   }
 
@@ -37,5 +29,13 @@ class Game {
     this.currentTurn = this.startingTurn;
 
     // gameState reset
+  }
+
+  trackGame() {
+
+  }
+
+  trackTurn() {
+
   }
 }
