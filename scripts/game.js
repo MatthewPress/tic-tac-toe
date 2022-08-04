@@ -52,14 +52,12 @@ class Game {
   }
 
   winReset() {
-    console.log("Win");
     this.currentPlayer.increaseWins();
-    // DOM: Display winner
+    displayWinner();
     this.resetGame();
   }
 
   drawReset() {
-    console.log("Draw");
     // DOM: Display Draw
     this.resetGame();
   }
@@ -70,7 +68,6 @@ class Game {
       // reset gameState
       // reset turnCount
       this.turnCount = 0;
-      console.log(this.turnCount);
       // switch startingPlayer
         // update currentPlayer w/ startingPlayer
         // repurpose code from startGame()
