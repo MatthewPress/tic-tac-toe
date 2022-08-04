@@ -12,16 +12,11 @@ class Game {
   }
 
   changeTurnTracker(turnTracker) {
-    console.log(turnTracker);
     if (turnTracker === this.players[0]) {
-      console.log("if");
-      turnTracker = this.players[1];
-      console.log(this.players[1]);
-      console.log(this.currentTurn);
+      this.currentTurn = this.players[1];
     }
     else if (turnTracker === this.players[1]) {
-      console.log("else");
-      turnTracker = this.players[0];
+      this.currentTurn = this.players[0];
     }
   }
 

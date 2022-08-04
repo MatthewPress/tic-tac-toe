@@ -66,15 +66,15 @@ function playersTurn(event) {
     for (var i = 0; i < gameGridSpaces.length; i++) {
       if (gameGridSpaces[i].classList === event.target.classList) {
         currentGame.gameState[i] = currentGame.currentTurn.token;
-        // Need to change disable to true when a space is selected
         event.target.disable = true;
         // Need to change all disables to false on reset
 
         updateGameDisplay();
+
         currentGame.changeTurnTracker(currentGame.currentTurn);
-        console.log(currentGame.currentTurn);
         updateTurnDisplay();
       }
     }
   }
+  console.log(currentGame.gameState);
 }
