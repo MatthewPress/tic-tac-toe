@@ -73,3 +73,7 @@ function playersTurn(event) {
     }
   }
 }
+
+function resetDisplay() {
+  console.log("resetDisplay");
+}

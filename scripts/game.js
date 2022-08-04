@@ -53,15 +53,15 @@ class Game {
 
   winReset() {
     console.log("Win");
-    // call players increaseWin()
+    this.currentPlayer.increaseWins();
     // DOM: Display winner
-    // resetGame();
+    resetGame();
   }
 
   drawReset() {
     console.log("Draw");
     // DOM: Display Draw
-    // resetGame();
+    resetGame();
   }
 
   resetGame() {
@@ -69,6 +69,8 @@ class Game {
       // delay
       // reset gameState
       // reset turnCount
+      this.turnCount = 0;
+      console.log(this.turnCount);
       // switch startingPlayer
         // update currentPlayer w/ startingPlayer
         // repurpose code from startGame()
@@ -77,8 +79,9 @@ class Game {
       // Reset button emojis
       // Display players' win counts
       // Display turn
+    resetDisplay();
 
-    // this.turnCount = 0;
+    //
     // for (var i = 0; i > this.gameState)
     // changeTurnTracker(this.startingPlayer);
     // this.currentPlayer = this.startingPlayer;
