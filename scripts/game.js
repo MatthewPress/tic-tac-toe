@@ -27,21 +27,21 @@ class Game {
 
   trackGame(spaceIndex) {
     this.gameState[spaceIndex] = this.currentTurn.token;
-    currentGame.changeTurnTracker(currentGame.currentTurn);
-    checkWin();
+    this.trackPlayerSpaces(spaceIndex);
+    this.changeTurnTracker(this.currentTurn);
+    // checkWin();
+  }
+
+  trackPlayerSpaces(spaceIndex) {
+    this.players[this.currentTurn.id].spaces.push(spaceIndex);
+    console.log(this.players[this.currentTurn.id], this.players[this.currentTurn.id].spaces);
   }
 
   checkWin() {
-    trackPlayersTurns();
+
   }
 
-  trackPlayersTurns() {
-    for (var i = 0; i < this.gameState.length; i++) {
-      if (this.gameState[i] === "🟦") {
-        this.players[0]
-      }
-    }
-  }
+
 
   resetGame() {
     changeTurnTracker(this.startingTurn);

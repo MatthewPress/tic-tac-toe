@@ -72,6 +72,8 @@ function playersTurn(event) {
 
         updateGameDisplay();
         updateTurnDisplay();
+
+        currentGame.checkWin();
       }
     }
   }
