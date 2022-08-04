@@ -14,28 +14,32 @@ class Game {
     this.players.push(player2);
 
     this.startingPlayer = this.players[0];
-    setCurrentPlayer();
+    this.setCurrentPlayer();
   }
 
   setCurrentPlayer() {
     this.currentPlayer = this.startingPlayer;
   }
 
-  changePlayer(turnTracker) {
-    if (turnTracker === this.players[0]) {
+  changePlayer() {
+    if (this.currentPlayer === this.players[0]) {
       this.currentPlayer = this.players[1];
     }
-    else if (turnTracker === this.players[1]) {
+    else if (this.currentPlayer === this.players[1]) {
       this.currentPlayer = this.players[0];
     }
+    updateTurnDisplay();
   }
 
   trackGame(spaceIndex) {
     this.gameState[spaceIndex] = this.currentPlayer.token;
     this.turnCount++;
     this.trackPlayerSpaces(spaceIndex);
-    this.checkOutcome();
-    this.changePlayer(this.currentPlayer);
+console.log(this.currentPlayer);
+    updateGameDisplay();
+    if (!this.checkOutcome()) {
+      this.changePlayer();
+    }
   }
 
   trackPlayerSpaces(spaceIndex) {
@@ -43,49 +47,49 @@ class Game {
   }
 
   checkOutcome() {
-    var joinedSpaces = this.currentPlayer.spaces.join("");
-
+    var sortedSpaces = this.currentPlayer.spaces.sort();
+    var joinedSpaces = sortedSpaces.join("");
+console.log(this.currentPlayer.token, joinedSpaces);
     for (var i = 0; i < winningConditions.length; i++) {
       if (joinedSpaces.includes(winningConditions[i])) {
         this.winReset();
+        return true;
       }
       else if (this.turnCount === 9) {
         this.drawReset();
+        return true;
       }
     }
+    return false;
   }
 
   winReset() {
     this.currentPlayer.increaseWins();
     displayWinner();
-    this.resetGame();
+    setTimeout(resetGame, 3000);
   }
 
   drawReset() {
     // DOM: Display Draw
-    this.resetGame();
+    setTimeout(resetGame, 3000);
   }
 
-  resetGame() {
+  resetData() {
     // DATA
-      // delay
-      // reset gameState
+    for (var i = 0; i < this.gameState.length; i++) {
+      this.gameState[i] = "🟪";
+    }
     this.turnCount = 0;
-    switchStartingPlayer();
-
-    displayGameData();
-
-    // for (var i = 0; i > this.gameState)
-    // changePlayer(this.startingPlayer);
+    this.switchStartingPlayer();
   }
 
   switchStartingPlayer() {
-    if (!this.startingPlayer.id) {
+    if (this.startingPlayer.id === 0) {
       this.startingPlayer = this.players[1];
     }
-    else if (this.startingPlayer.id) {
+    else if (this.startingPlayer.id === 1) {
       this.startingPlayer = this.players[0];
     }
-    setCurrentPlayer();
+    this.setCurrentPlayer();
   }
 }

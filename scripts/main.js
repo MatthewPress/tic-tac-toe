@@ -1,18 +1,3 @@
-// I 2: Check for Win
-  // check board for win condition
-  // An array holding arrays of win conditions
-  // Maybe turn this into an object for some type of looping
-  // search the gameState array for every index that a player's emoji exists
-  // put index positions in new array for each player
-  // check if the players' index array INCLUDES an array from the first point
-
-// I 4: Reset and new starting player
-  // Happens after brief pause
-  // Player win count increases in a function separate from Reset
-  // startingPlayer is switched in Data
-  // Reset gameState Data and Dom
-  // Update playerWin count in Dom
-
 // ***** Selectors *****
 var playerOneToken = document.querySelector('.player-one-token');
 var playerOneWins = document.querySelector('.player-one-wins');
@@ -63,17 +48,26 @@ function playersTurn(event) {
   if (!event.target.disable) {
     for (var i = 0; i < gameGridSpaces.length; i++) {
       if (gameGridSpaces[i].classList === event.target.classList) {
-        currentGame.trackGame(i);
-        // Need to change all disables to false on reset
         event.target.disable = true;
-
-        updateGameDisplay();
-        updateTurnDisplay();
+        currentGame.trackGame(i);
       }
     }
   }
 }
 
+function resetGame() {
+  currentGame.resetData();
+
+  displayGameData();
+  for (var i = 0; i < gameGridSpaces.length; i++) {
+    gameGridSpaces[i].disable = false;
+  }
+}
+
 function displayWinner() {
   turnDisplay.innerText = `Won: ${currentGame.currentPlayer.token}`;
+}
+
+function displayDraw() {
+  turnDisplay.innerText = `Draw`;
 }
