@@ -12,10 +12,15 @@ class Game {
   }
 
   changeTurnTracker(turnTracker) {
+    console.log(turnTracker);
     if (turnTracker === this.players[0]) {
+      console.log("if");
       turnTracker = this.players[1];
+      console.log(this.players[1]);
+      console.log(this.currentTurn);
     }
     else if (turnTracker === this.players[1]) {
+      console.log("else");
       turnTracker = this.players[0];
     }
   }
@@ -35,7 +40,7 @@ class Game {
   resetGame() {
     changeTurnTracker(this.startingTurn);
     this.currentTurn = this.startingTurn;
-    
+
     // gameState reset
   }
 }

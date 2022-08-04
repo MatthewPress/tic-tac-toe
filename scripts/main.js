@@ -16,6 +16,7 @@ var playerOneWins = document.querySelector('.player-one-wins');
 var playerTwoToken = document.querySelector('.player-two-token');
 var playerTwoWins = document.querySelector('.player-two-wins');
 var turnDisplay = document.querySelector('.game-turn-display');
+var gameGrid = document.querySelector('.game-grid');
 var gameGridSpaces = document.querySelectorAll('.game-grid-space');
 
 // ***** Data *****
@@ -23,6 +24,7 @@ var currentGame = createGame();
 
 // ***** Event Listeners *****
 window.addEventListener('load', displayGameData);
+gameGrid.addEventListener('click', playersTurn);
 
 // ***** Event Handlers *****
 function createGame() {
@@ -56,5 +58,23 @@ function updateTurnDisplay() {
 function updateGameDisplay() {
   for (var i = 0; i < currentGame.gameState.length; i++) {
     gameGridSpaces[i].innerText = currentGame.gameState[i];
+  }
+}
+
+function playersTurn(event) {
+  if (!event.target.disable) {
+    for (var i = 0; i < gameGridSpaces.length; i++) {
+      if (gameGridSpaces[i].classList === event.target.classList) {
+        currentGame.gameState[i] = currentGame.currentTurn.token;
+        // Need to change disable to true when a space is selected
+        event.target.disable = true;
+        // Need to change all disables to false on reset
+
+        updateGameDisplay();
+        currentGame.changeTurnTracker(currentGame.currentTurn);
+        console.log(currentGame.currentTurn);
+        updateTurnDisplay();
+      }
+    }
   }
 }
