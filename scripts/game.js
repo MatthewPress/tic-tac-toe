@@ -14,6 +14,10 @@ class Game {
     this.players.push(player2);
 
     this.startingPlayer = this.players[0];
+    setCurrentPlayer();
+  }
+
+  setCurrentPlayer() {
     this.currentPlayer = this.startingPlayer;
   }
 
@@ -66,16 +70,13 @@ class Game {
     // DATA
       // delay
       // reset gameState
-      this.turnCount = 0;
-      switchStartingPlayer();
-        // update currentPlayer w/ startingPlayer
-        // repurpose code from startGame()
+    this.turnCount = 0;
+    switchStartingPlayer();
 
     displayGameData();
 
     // for (var i = 0; i > this.gameState)
     // changePlayer(this.startingPlayer);
-    // this.currentPlayer = this.startingPlayer;
   }
 
   switchStartingPlayer() {
@@ -85,5 +86,6 @@ class Game {
     else if (this.startingPlayer.id) {
       this.startingPlayer = this.players[0];
     }
+    setCurrentPlayer();
   }
 }
