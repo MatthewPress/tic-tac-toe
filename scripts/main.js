@@ -33,14 +33,8 @@ gameGrid.addEventListener('click', playersTurn);
 
 // ***** Event Handlers *****
 function createGame() {
-  var player1 = new Player(0, "🟩");
-  var player2 = new Player(1, "🟦");
   var createdGame = new Game();
-
-  createdGame.players.push(player1);
-  createdGame.players.push(player2);
-
-  createdGame.setTurnTrackers();
+  createdGame.startGame();
 
   return createdGame;
 }
@@ -71,9 +65,9 @@ function playersTurn(event) {
     for (var i = 0; i < gameGridSpaces.length; i++) {
       if (gameGridSpaces[i].classList === event.target.classList) {
         currentGame.trackTurn(i);
-        
-        event.target.disable = true;
         // Need to change all disables to false on reset
+        event.target.disable = true;
+        
         updateGameDisplay();
         updateTurnDisplay();
       }

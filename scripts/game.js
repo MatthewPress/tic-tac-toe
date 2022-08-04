@@ -6,7 +6,12 @@ class Game {
     // this.currentTurn;
   }
 
-  setTurnTrackers() {
+  startGame() {
+    var player1 = new Player(0, "🟩");
+    var player2 = new Player(1, "🟦");
+    this.players.push(player1);
+    this.players.push(player2);
+
     this.startingTurn = this.players[0];
     this.currentTurn = this.startingTurn;
   }
@@ -26,7 +31,7 @@ class Game {
   }
 
   checkWin() {
-    
+
   }
 
   resetGame() {
@@ -37,6 +42,10 @@ class Game {
   }
 
   trackGame() {
+
+  }
+
+  setTurnTrackers() {
 
   }
 }
