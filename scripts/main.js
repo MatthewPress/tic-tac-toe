@@ -4,7 +4,7 @@
   // search the gameState array for every index that a player's emoji exists
   // put index positions in new array for each player
   // check if the players' index array INCLUDES an array from the first point
-  
+
 // I 4: Reset and new starting player
   // Happens after brief pause
   // Player win count increases in a function separate from Reset
@@ -78,5 +78,4 @@ function playersTurn(event) {
       }
     }
   }
-  console.log(currentGame.gameState);
 }
