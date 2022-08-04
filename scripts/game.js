@@ -25,13 +25,22 @@ class Game {
     }
   }
 
-  trackTurn(spaceIndex) {
+  trackGame(spaceIndex) {
     this.gameState[spaceIndex] = this.currentTurn.token;
     currentGame.changeTurnTracker(currentGame.currentTurn);
+    checkWin();
   }
 
   checkWin() {
+    trackPlayersTurns();
+  }
 
+  trackPlayersTurns() {
+    for (var i = 0; i < this.gameState.length; i++) {
+      if (this.gameState[i] === "🟦") {
+        this.players[0]
+      }
+    }
   }
 
   resetGame() {
@@ -39,10 +48,6 @@ class Game {
     this.currentTurn = this.startingTurn;
 
     // gameState reset
-  }
-
-  trackGame() {
-
   }
 
   setTurnTrackers() {

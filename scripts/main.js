@@ -66,7 +66,7 @@ function playersTurn(event) {
   if (!event.target.disable) {
     for (var i = 0; i < gameGridSpaces.length; i++) {
       if (gameGridSpaces[i].classList === event.target.classList) {
-        currentGame.trackTurn(i);
+        currentGame.trackGame(i);
         // Need to change all disables to false on reset
         event.target.disable = true;
 
