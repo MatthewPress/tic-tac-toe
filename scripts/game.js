@@ -17,7 +17,7 @@ class Game {
     this.currentPlayer = this.startingPlayer;
   }
 
-  changeTurnTracker(turnTracker) {
+  changePlayer(turnTracker) {
     if (turnTracker === this.players[0]) {
       this.currentPlayer = this.players[1];
     }
@@ -31,7 +31,7 @@ class Game {
     this.turnCount++;
     this.trackPlayerSpaces(spaceIndex);
     this.checkOutcome();
-    this.changeTurnTracker(this.currentPlayer);
+    this.changePlayer(this.currentPlayer);
   }
 
   trackPlayerSpaces(spaceIndex) {
@@ -66,20 +66,24 @@ class Game {
     // DATA
       // delay
       // reset gameState
-      // reset turnCount
       this.turnCount = 0;
-      // switch startingPlayer
+      switchStartingPlayer();
         // update currentPlayer w/ startingPlayer
         // repurpose code from startGame()
 
     displayGameData();
 
     // for (var i = 0; i > this.gameState)
-    // changeTurnTracker(this.startingPlayer);
+    // changePlayer(this.startingPlayer);
     // this.currentPlayer = this.startingPlayer;
   }
 
-  setTurnTrackers() {
-
+  switchStartingPlayer() {
+    if (!this.startingPlayer.id) {
+      this.startingPlayer = this.players[1];
+    }
+    else if (this.startingPlayer.id) {
+      this.startingPlayer = this.players[0];
+    }
   }
 }
