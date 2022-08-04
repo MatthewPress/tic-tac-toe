@@ -52,7 +52,11 @@ class Game {
   }
 
   winReset() {
-    console.log("Ding");
+    console.log("Win");
+  }
+
+  drawReset() {
+    console.log("Draw");
   }
 
   resetGame() {
