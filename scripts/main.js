@@ -74,6 +74,6 @@ function playersTurn(event) {
   }
 }
 
-function resetDisplay() {
-  console.log("resetDisplay");
+function displayWinner() {
+  turnDisplay.innerText = `Won: ${currentGame.currentPlayer.token}`;
 }
