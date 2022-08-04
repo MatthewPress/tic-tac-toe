@@ -5,6 +5,7 @@ class Player {
     this.wins = 0;
     this.spaces = [];
   }
+  
   increaseWins() {
     this.wins++;
   }
