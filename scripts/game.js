@@ -25,8 +25,8 @@ class Game {
     }
   }
 
-  trackTurn(indexPosition) {
-    this.gameState[indexPosition] = this.currentTurn.token;
+  trackTurn(spaceIndex) {
+    this.gameState[spaceIndex] = this.currentTurn.token;
     currentGame.changeTurnTracker(currentGame.currentTurn);
   }
 
