@@ -1,8 +1,3 @@
-// I 1: Player's turn
-  // player's token fills gameboard
-  // Switch players after turn
-  // Update turnDisplay
-
 // I 4: Reset and new starting player
   // Happens after brief pause
   // Player win count increases in a function separate from Reset
