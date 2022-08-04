@@ -1,3 +1,6 @@
+// Refactor
+  // All DOM updates happen in the Game class object instance
+
 // I 2: Check for Win
   // check board for win condition
   // An array holding arrays of win conditions
