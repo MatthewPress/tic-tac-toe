@@ -3,8 +3,6 @@ class Game {
     this.players = [];
     this.gameState = ["🟪", "🟪", "🟪", "🟪", "🟪", "🟪", "🟪", "🟪", "🟪"];
     this.turnCount = 0;
-    // this.startingPlayer;
-    // this.currentPlayer;
   }
 
   startGame() {
@@ -28,6 +26,7 @@ class Game {
     else if (this.currentPlayer === this.players[1]) {
       this.currentPlayer = this.players[0];
     }
+
     updateTurnDisplay();
   }
 
@@ -35,8 +34,9 @@ class Game {
     this.gameState[spaceIndex] = this.currentPlayer.token;
     this.turnCount++;
     this.trackPlayerSpaces(spaceIndex);
-console.log(this.currentPlayer);
+
     updateGameDisplay();
+
     if (!this.checkOutcome()) {
       this.changePlayer();
     }
@@ -49,7 +49,7 @@ console.log(this.currentPlayer);
   checkOutcome() {
     var sortedSpaces = this.currentPlayer.spaces.sort();
     var joinedSpaces = sortedSpaces.join("");
-console.log(this.currentPlayer.token, joinedSpaces);
+
     for (var i = 0; i < winningConditions.length; i++) {
       if (joinedSpaces.includes(winningConditions[i])) {
         this.winReset();
@@ -60,6 +60,7 @@ console.log(this.currentPlayer.token, joinedSpaces);
         return true;
       }
     }
+
     return false;
   }
 
@@ -77,8 +78,8 @@ console.log(this.currentPlayer.token, joinedSpaces);
   resetData() {
     for (var i = 0; i < this.gameState.length; i++) {
       this.gameState[i] = "🟪";
-      this.players[0].spaces.splice(0, 1)
-      this.players[1].spaces.splice(0, 1)
+      this.players[0].spaces.splice(0, 1);
+      this.players[1].spaces.splice(0, 1);
     }
 
     this.turnCount = 0;
@@ -92,6 +93,7 @@ console.log(this.currentPlayer.token, joinedSpaces);
     else if (this.startingPlayer.id === 1) {
       this.startingPlayer = this.players[0];
     }
+    
     this.setCurrentPlayer();
   }
 }
