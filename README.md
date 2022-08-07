@@ -19,10 +19,6 @@
     <br />
     <br />
     <a href="https://github.com/MatthewPress/tic-tac-toe">View Demo</a>
-    ·
-    <a href="https://github.com/MatthewPress/tic-tac-toe/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/MatthewPress/tic-tac-toe/issues">Request Feature</a>
   </p>
 </div>
 
@@ -95,7 +91,7 @@ Project Link: [https://github.com/MatthewPress/tic-tac-toe](https://github.com/M
 
 ## Acknowledgments
 
-* Ted Summer for encouraging me to take up coding and helping me when I have been at my wits end with trying to debug something
+* Ted Summer for encouraging me to take up coding and helping me when I have been at my wits end trying to debug something
 * The [![Turing][turing.edu]][turing-url] staff, especially the Mod 1 2207 instructors, for a great coding bootcamp experience
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
