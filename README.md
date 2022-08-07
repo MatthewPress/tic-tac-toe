@@ -48,7 +48,7 @@
 
 ## About The Project
 
-[![Grids Screen Shot][product-screenshot]](https://example.com)
+[![Grids Screen Shot][product-demo]](assets/images/demo.gif)
 
 This project was created for the Turing School of Software and Design's Module 1
 final solo project. The overall goal was to demonstrate what we have learned in the
@@ -96,7 +96,7 @@ Project Link: [https://github.com/MatthewPress/tic-tac-toe](https://github.com/M
 ## Acknowledgments
 
 * Ted Summer for encouraging me to take up coding and helping me when I have been at my wits end with trying to debug something
-* [![turing.edu][turing-url]] The whole staff at Turing, especially the Mod 1 2207 instructors, for a great coding bootcamp experience
+* The [![Turing][turing.edu]][turing-url] staff, especially the Mod 1 2207 instructors, for a great coding bootcamp experience
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,7 +105,7 @@ Project Link: [https://github.com/MatthewPress/tic-tac-toe](https://github.com/M
 [license-url]: https://github.com/MatthewPress/tic-tac-toe/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/matthew-press-813961246/
-[product-screenshot]: assets/images/screenshot.png
+[product-demo]: assets/images/demo.gif
 [JavaScript.com]: https://img.shields.io/badge/-JavaScript-yellow
 [JavaScript-url]: https://www.javascript.com/
 [w3.org/Style/CSS/Overview.en.html]: https://img.shields.io/badge/-CSS-blue
