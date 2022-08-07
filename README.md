@@ -87,7 +87,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Matthew Press - [@twitter_handle](https://twitter.com/twitter_handle) - press.matt14@gmail.com
+Matthew Press - [@MatthewPres2](https://twitter.com/MatthewPres2) - press.matt14@gmail.com
 
 Project Link: [https://github.com/MatthewPress/tic-tac-toe](https://github.com/MatthewPress/tic-tac-toe)
 
@@ -95,8 +95,8 @@ Project Link: [https://github.com/MatthewPress/tic-tac-toe](https://github.com/M
 
 ## Acknowledgments
 
-* []() Ted Summer for encouraging me to take up coding and helping me when I have been at my wits end with this material
-* []() The whole staff at Turing and, especially the Mod 1 2207 instructors, for a great coding bootcamp experience
+* Ted Summer for encouraging me to take up coding and helping me when I have been at my wits end with trying to debug something
+* [![turing.edu][turing-url]] The whole staff at Turing, especially the Mod 1 2207 instructors, for a great coding bootcamp experience
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -106,9 +106,11 @@ Project Link: [https://github.com/MatthewPress/tic-tac-toe](https://github.com/M
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/matthew-press-813961246/
 [product-screenshot]: assets/images/screenshot.png
-[JavaScript.com]: https://img.shields.io/badge/-Javascript-yellow
+[JavaScript.com]: https://img.shields.io/badge/-JavaScript-yellow
 [JavaScript-url]: https://www.javascript.com/
 [w3.org/Style/CSS/Overview.en.html]: https://img.shields.io/badge/-CSS-blue
 [CSS-url]: https://www.w3.org/Style/CSS/Overview.en.html
 [w3.org]: https://img.shields.io/badge/-HTML5-red
 [HTML-url]: https://www.w3.org/
+[turing.edu]: https://img.shields.io/badge/-Turing%20School%20of%20Software%20and%20Design-lightgrey
+[turing-url]: https://turing.edu/
