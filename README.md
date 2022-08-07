@@ -71,8 +71,6 @@ in the program so far.
 
 - [ ] Utilize JSON and localStorage to save the game data locally, so it persists when the page is refreshed
 
-See the [open issues](https://github.com/MatthewPress/tic-tac-toe/issues) for a full list of proposed features (and known issues).
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## License
@@ -91,7 +89,7 @@ Project Link: [https://github.com/MatthewPress/tic-tac-toe](https://github.com/M
 
 ## Acknowledgments
 
-* Ted Summer for encouraging me to take up coding and helping me when I have been at my wits end trying to debug something
+* My roommate for encouraging me to take up coding and helping me when I have been at my wits end trying to debug something
 * The [![Turing][turing.edu]][turing-url] staff, especially the Mod 1 2207 instructors, for a great coding bootcamp experience
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
