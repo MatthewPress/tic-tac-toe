@@ -44,7 +44,7 @@
 
 ## About The Project
 
-[![Grids Screen Shot][product-demo]](assets/images/demo.gif)
+[![Grids Demo][product-demo]](assets/images/demo.gif)
 
 This project was created for the Turing School of Software and Design's Module 1
 final solo project. The overall goal was to demonstrate what we have learned in the
@@ -89,8 +89,8 @@ Project Link: [https://github.com/MatthewPress/tic-tac-toe](https://github.com/M
 
 ## Acknowledgments
 
-* My roommate for encouraging me to take up coding and helping me when I have been at my wits end trying to debug something
-* The [![Turing][turing.edu]][turing-url] staff, especially the Mod 1 2207 instructors, for a great coding bootcamp experience
+* [Ted Summer](https://www.tedsummer.com/) for encouraging me to take up coding and helping me when I have been at my wits end trying to debug something
+* The [Turing School of Software and Design](https://turing.edu/) staff, especially the Mod 1 2207 instructors, for a great coding bootcamp experience
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -106,5 +106,3 @@ Project Link: [https://github.com/MatthewPress/tic-tac-toe](https://github.com/M
 [CSS-url]: https://www.w3.org/Style/CSS/Overview.en.html
 [w3.org]: https://img.shields.io/badge/-HTML5-red
 [HTML-url]: https://www.w3.org/
-[turing.edu]: https://img.shields.io/badge/-Turing%20School%20of%20Software%20and%20Design-lightgrey
-[turing-url]: https://turing.edu/
