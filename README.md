@@ -94,11 +94,14 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Planning documents for this project: [Google Doc](https://docs.google.com/document/d/1CoiL1VDHqBoSPtplJtX_yfX9O63XWgLtd8kR_6Rthu0/edit)
 
-
-
 ### Reflections
+* Wins
+I think the planning I put into this project from the beginning helped me visualize every element I would need and how it would all fit together
 
-This project afforded me the opportunity to show everything I've learned while studying at Turing, and I also learned a few new things. Creating the required functionality and style was exciting, but I really enjoyed learning about and applying all the small pieces that go into a well-rounded project (i.e. adding a license and pull request template).
+What I enjoyed most about this project was learning about and applying all the smaller pieces that go into a well-rounded project (i.e. adding a license and pull request template).
+
+* Challenges
+Trying to capture ever win condition without utilizing an array iterator was difficult, and the solution I came up with had a lot of nested for loops and conditionals
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
