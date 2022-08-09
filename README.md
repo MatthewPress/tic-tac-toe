@@ -33,6 +33,12 @@
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#license">License</a></li>
+    <li>
+        <a href="#notes">Notes</a>
+        <ul>
+            <li><a href="#reflections">Reflections</a>
+        </ul>
+    </li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -42,11 +48,7 @@
 
 [![Grids Demo][product-demo]](assets/images/demo.gif)
 
-This project was created for the Turing School of Software and Design's Module 1
-final solo project. The overall goal was to demonstrate what we have learned in the
-in the program so far.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+This project was created for the Turing School of Software and Design's Module 1 final solo project. The overall goal was to demonstrate what we have learned in the program so far.
 
 ### Built With
 
@@ -67,7 +69,7 @@ in the program so far.
 
 ## Roadmap
 
-- [ ] Utilize JSON and localStorage to save the game data locally, so it persists when the page is refreshed
+- [ ] Utilize JSON and localStorage to save the game data locally so it persists when the page is refreshed
 - [ ] Allow players to choose their token
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -81,6 +83,10 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ## Notes
 
 Planning documents for this project: [Google Doc](https://docs.google.com/document/d/1CoiL1VDHqBoSPtplJtX_yfX9O63XWgLtd8kR_6Rthu0/edit)
+
+### Reflections
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contact
 
