@@ -9,7 +9,11 @@ var gameGridSpaces = document.querySelectorAll('.game-grid-space');
 
 // ***** Data *****
 var currentGame = createGame();
-var winningConditions = ["012", "345", "678", "036", "147", "258", "048", "246"];
+var winningConditions = [
+  [0, 1, 2], [3, 4, 5], [6, 7, 8],
+  [0, 3, 6], [1, 4, 7], [2, 5, 8],
+  [0, 4, 8], [2, 4, 6]
+];
 
 // ***** Event Listeners *****
 window.addEventListener('load', displayGameData);
