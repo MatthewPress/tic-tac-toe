@@ -1,13 +1,15 @@
 class Game {
   constructor() {
     this.players = [];
-    this.gameState = ["🟪", "🟪", "🟪", "🟪", "🟪", "🟪", "🟪", "🟪", "🟪"];
+    this.gameState = ['🟪', '🟪', '🟪', '🟪', '🟪', '🟪', '🟪', '🟪', '🟪'];
     this.turnCount = 0;
+    this.startingPlayer;
+    this.currentPlayer;
   }
 
   startGame() {
-    var player1 = new Player(0, "🟩");
-    var player2 = new Player(1, "🟦");
+    var player1 = new Player(0, '🟩');
+    var player2 = new Player(1, '🟦');
     this.players.push(player1);
     this.players.push(player2);
 
@@ -35,7 +37,7 @@ class Game {
     this.turnCount++;
     this.trackPlayerSpaces(spaceIndex);
 
-    updateGameDisplay();
+    updateGridDisplay();
 
     if (!this.checkOutcome()) {
       this.changePlayer();
@@ -47,9 +49,7 @@ class Game {
   }
 
   checkOutcome() {
-    // var sortedSpaces = this.currentPlayer.spaces.sort();
     var winCount;
-    
     for (var i = 0; i < winningConditions.length; i++) {
       winCount = 0;
       for (var j = 0; j < 3; j++) {
@@ -85,7 +85,7 @@ class Game {
 
   resetData() {
     for (var i = 0; i < this.gameState.length; i++) {
-      this.gameState[i] = "🟪";
+      this.gameState[i] = '🟪';
       this.players[0].spaces.splice(0, 1);
       this.players[1].spaces.splice(0, 1);
     }
