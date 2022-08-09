@@ -10,6 +10,7 @@
     <img src="assets/images/favicon.ico" alt="Logo" width="80" height="80">
   </a>
 
+<!-- HEADER -->
 <h3 align="center">Grids (Tic-Tac-Toe)</h3>
   <p align="center">
     Turing Mod 1 Final Solo Project
@@ -31,8 +32,19 @@
     <li>
       <a href="#setup">Setup</a>
     </li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li>
+      <a href="#roadmap">Roadmap</a>
+      <ul>
+          <li><a href="#collaboration">Collaboration</a>
+      </ul>
+    </li>
     <li><a href="#license">License</a></li>
+    <li>
+        <a href="#notes">Notes</a>
+        <ul>
+            <li><a href="#reflections">Reflections</a>
+        </ul>
+    </li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -42,11 +54,7 @@
 
 [![Grids Demo][product-demo]](assets/images/demo.gif)
 
-This project was created for the Turing School of Software and Design's Module 1
-final solo project. The overall goal was to demonstrate what we have learned in the
-in the program so far.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+This project was created for the Turing School of Software and Design's Module 1 final solo project. The overall goal was to demonstrate what we have learned in the program so far.
 
 ### Built With
 
@@ -67,8 +75,12 @@ in the program so far.
 
 ## Roadmap
 
-- [ ] Utilize JSON and localStorage to save the game data locally, so it persists when the page is refreshed
+- [ ] Utilize JSON and localStorage to save the game data locally so it persists when the page is refreshed
 - [ ] Allow players to choose their token
+
+### Collaboration
+- If you would like to collaborate, please reach out by [email](press.matt14@gmail.com)
+- If you would like to submit an issue or suggested feature, please `clone` a copy of the repository to your local machine, create a new `branch`, edit `suggestions.md`, and submit a `pull request` using  `pull_request_template.md`.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -81,6 +93,14 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ## Notes
 
 Planning documents for this project: [Google Doc](https://docs.google.com/document/d/1CoiL1VDHqBoSPtplJtX_yfX9O63XWgLtd8kR_6Rthu0/edit)
+
+
+
+### Reflections
+
+This project afforded me the opportunity to show everything I've learned while studying at Turing, and I also learned a few new things. Creating the required functionality and style was exciting, but I really enjoyed learning about and applying all the small pieces that go into a well-rounded project (i.e. adding a license and pull request template).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contact
 
