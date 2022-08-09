@@ -88,3 +88,16 @@ button {
 .disabled {
   cursor: not-allowed;
 }
+
+/* Extra Small Device Sizings */
+@media only screen and (max-width: 600px) {
+  .game-grid {
+    grid-gap: 10px;
+    width: 210px;
+    height: 200px;
+  }
+
+  button {
+    font-size: 3.4em;
+  }
+}
