@@ -19,6 +19,7 @@ img {
   height: 7%;
   filter: invert(98%) sepia(0%) saturate(7500%) hue-rotate(148deg) brightness(112%) contrast(101%);
   margin: 20px;
+  cursor: pointer;
 }
 
 /* Shared Flex Layouts */
@@ -72,5 +73,4 @@ button {
 /* "Bubble" around player sections */
 /* Player sections grow and shrink with page */
 /* Match On and Off music button */
-/* Cursors and "No touch" cursor */
 /* Effects (disable) (header) (Player bubbles) */
