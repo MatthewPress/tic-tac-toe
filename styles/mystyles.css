@@ -6,7 +6,6 @@ body {
 }
 
 /* Shared Flex Layouts */
-/* header, */
 h1,
 article,
 .game {
@@ -43,7 +42,7 @@ main {
 }
 
 /* Player Articles */
-h4{
+h4 {
   font-size: 4vw;
   margin: 0px 0px;
 }
@@ -83,12 +82,9 @@ button {
 }
 
 .hvr-grow:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .disabled {
   cursor: not-allowed;
 }
-
-/* Board grows and shrinks with page */
-/* Match On and Off music button */
