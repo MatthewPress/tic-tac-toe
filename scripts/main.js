@@ -53,6 +53,7 @@ function playersTurn(event) {
     for (var i = 0; i < gameGridSpaces.length; i++) {
       if (gameGridSpaces[i].classList === event.target.classList) {
         event.target.disable = true;
+        event.target.classList.add('disabled');
         currentGame.trackGame(i);
       }
     }
@@ -65,6 +66,7 @@ function resetGame() {
   displayGameData();
   for (var i = 0; i < gameGridSpaces.length; i++) {
     gameGridSpaces[i].disable = false;
+    gameGridSpaces[i].classList.remove('disabled');
   }
 }
 
