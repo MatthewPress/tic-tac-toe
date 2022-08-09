@@ -1,14 +1,13 @@
 <a name="readme-top"></a>
 
 <!-- PROJECT SHIELDS -->
-[![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/MatthewPress/tic-tac-toe">
-    <img src="asset/images/favicon.ico" alt="Logo" width="80" height="80">
+    <img src="assets/images/favicon.ico" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Grids (Tic-Tac-Toe)</h3>
@@ -16,9 +15,6 @@
     Turing Mod 1 Final Solo Project
     <br />
     <a href="https://github.com/MatthewPress/tic-tac-toe"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/MatthewPress/tic-tac-toe">View Demo</a>
   </p>
 </div>
 
@@ -33,7 +29,7 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#setup">Setup</a>
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#license">License</a></li>
@@ -60,16 +56,19 @@ in the program so far.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Getting Started
+## Setup
 
 - Clone the repository to your local machine
 - `cd` into the project
 - `open index.html`
 - Grab a partner and take turns picking grid squares
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Roadmap
 
 - [ ] Utilize JSON and localStorage to save the game data locally, so it persists when the page is refreshed
+- [ ] Allow players to choose their token
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -78,6 +77,10 @@ in the program so far.
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Notes
+
+Planning documents for this project: [Google Doc](https://docs.google.com/document/d/1CoiL1VDHqBoSPtplJtX_yfX9O63XWgLtd8kR_6Rthu0/edit)
 
 ## Contact
 
@@ -95,8 +98,6 @@ Project Link: [https://github.com/MatthewPress/tic-tac-toe](https://github.com/M
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[license-shield]: https://img.shields.io/github/license/MatthewPress/tic-tac-toe.svg?style=for-the-badge
-[license-url]: https://github.com/MatthewPress/tic-tac-toe/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/matthew-press-813961246/
 [product-demo]: assets/images/demo.gif
