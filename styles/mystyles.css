@@ -34,8 +34,9 @@ article,
 
 /* Header */
 h1 {
-  font-size: 7vw;
+  font-size: 5vw;
   filter: drop-shadow(0 1px 3px);
+  margin: 0px;
 }
 
 /* Main */
@@ -47,10 +48,12 @@ main {
 /* Player Articles */
 h4{
   font-size: 4vw;
+  margin: 0px 0px;
 }
 
 p {
   font-size: 3vw;
+  margin-bottom: 0px;
 }
 
 /* Game Section */
@@ -62,12 +65,12 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
-  width: 210px;
-  height: 183px;
+  width: 373px;
+  height: 363px;
 }
 
 button {
-  font-size: 3em;
+  font-size: 6em;
   background: transparent;
   padding: 0px;
   border: 0px;
