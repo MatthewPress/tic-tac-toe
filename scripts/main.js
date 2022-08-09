@@ -29,20 +29,20 @@ function createGame() {
 
 function displayGameData() {
   playerOneToken.innerText = currentGame.players[0].token;
-  playerOneWins.innerText = `Wins: ${currentGame.players[0].wins}`;
+  playerOneWins.innerText = `${currentGame.players[0].wins}`;
 
   playerTwoToken.innerText = currentGame.players[1].token;
-  playerTwoWins.innerText = `Wins: ${currentGame.players[1].wins}`;
+  playerTwoWins.innerText = `${currentGame.players[1].wins}`;
 
   updateTurnDisplay();
-  updateGameDisplay();
+  updateGridDisplay();
 }
 
 function updateTurnDisplay() {
   turnDisplay.innerText = `Turn: ${currentGame.currentPlayer.token}`;
 }
 
-function updateGameDisplay() {
+function updateGridDisplay() {
   for (var i = 0; i < currentGame.gameState.length; i++) {
     gameGridSpaces[i].innerText = currentGame.gameState[i];
   }
@@ -69,7 +69,6 @@ function resetGame() {
     gameGridSpaces[i].disable = false;
     gameGridSpaces[i].classList.remove('disabled');
     gameGridSpaces[i].classList.add('hvr-grow');
-
   }
 }
 

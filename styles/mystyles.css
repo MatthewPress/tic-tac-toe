@@ -5,7 +5,7 @@ body {
   color: #FFFFFF;
 }
 
-/* Shared Flex Layouts */
+/* Shared Layouts */
 h1,
 article,
 .game {
@@ -25,14 +25,6 @@ h1 {
   filter: drop-shadow(0 1px 3px);
   margin: 15px 0px 0px 0px;
   flex-direction: row;
-}
-
-img {
-  width: 7%;
-  height: 7%;
-  filter: invert(98%) sepia(0%) saturate(7500%) hue-rotate(148deg) brightness(112%) contrast(101%);
-  margin: 0px 0px 0px 15px;
-  cursor: pointer;
 }
 
 /* Main */
@@ -89,7 +81,7 @@ button {
   cursor: not-allowed;
 }
 
-/* Extra Small Device Sizings */
+/* Extra Small Device (mobile) Rules */
 @media only screen and (max-width: 600px) {
   .game-grid {
     grid-gap: 10px;
