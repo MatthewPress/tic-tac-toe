@@ -10,6 +10,7 @@
 /* Body */
 body {
   background: #212121;
+  font-family: sans-serif;
   color: #FFFFFF;
 }
 
@@ -31,6 +32,9 @@ article,
 }
 
 /* Header */
+h1 {
+  filter: drop-shadow(0 1px 3px);
+}
 
 /* Main */
 main {
