@@ -1,13 +1,16 @@
 ## Category:
-[Issue] 
-[Feature] 
+[Fix]
+[Feature]
 [Suggestion]
+[Issue]
+[Style]
+[Docs]
+[Chore]
 
 ## Topic:
-* General purpose of pull request
+General purpose of pull request
 
 ## What to change:
-*
+* 
 
 ## Why:
-*
