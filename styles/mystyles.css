@@ -27,14 +27,6 @@ h1 {
   flex-direction: row;
 }
 
-img {
-  width: 7%;
-  height: 7%;
-  filter: invert(98%) sepia(0%) saturate(7500%) hue-rotate(148deg) brightness(112%) contrast(101%);
-  margin: 0px 0px 0px 15px;
-  cursor: pointer;
-}
-
 /* Main */
 main {
   display: grid;
