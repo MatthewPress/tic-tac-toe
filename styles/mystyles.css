@@ -34,6 +34,7 @@ article,
 
 /* Header */
 h1 {
+  font-size: 7vw;
   filter: drop-shadow(0 1px 3px);
 }
 
@@ -44,8 +45,19 @@ main {
 }
 
 /* Player Articles */
+h3{
+  font-size: 4vw;
+}
+
+p {
+  font-size: 3vw;
+}
 
 /* Game Section */
+h3 {
+  font-size: 5vw;
+}
+
 .game-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
