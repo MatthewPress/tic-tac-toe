@@ -29,10 +29,10 @@ function createGame() {
 
 function displayGameData() {
   playerOneToken.innerText = currentGame.players[0].token;
-  playerOneWins.innerText = `Wins: ${currentGame.players[0].wins}`;
+  playerOneWins.innerText = `${currentGame.players[0].wins}`;
 
   playerTwoToken.innerText = currentGame.players[1].token;
-  playerTwoWins.innerText = `Wins: ${currentGame.players[1].wins}`;
+  playerTwoWins.innerText = `${currentGame.players[1].wins}`;
 
   updateTurnDisplay();
   updateGridDisplay();
