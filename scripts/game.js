@@ -47,18 +47,26 @@ class Game {
   }
 
   checkOutcome() {
-    var sortedSpaces = this.currentPlayer.spaces.sort();
-    var joinedSpaces = sortedSpaces.join("");
-
+    // var sortedSpaces = this.currentPlayer.spaces.sort();
+    var winCount;
+    
     for (var i = 0; i < winningConditions.length; i++) {
-      if (joinedSpaces.includes(winningConditions[i])) {
-        this.winReset();
-        return true;
+      winCount = 0;
+      for (var j = 0; j < 3; j++) {
+        var winningCondition = winningConditions[i][j];
+        if (this.currentPlayer.spaces.indexOf(winningCondition) >= 0) {
+          winCount++;
+          if (winCount === 3) {
+            this.winReset();
+            return true;
+          }
+        }
       }
-      else if (this.turnCount === 9) {
-        this.drawReset();
-        return true;
-      }
+    }
+
+    if (this.turnCount === 9) {
+      this.drawReset();
+      return true;
     }
 
     return false;
@@ -93,7 +101,7 @@ class Game {
     else if (this.startingPlayer.id === 1) {
       this.startingPlayer = this.players[0];
     }
-    
+
     this.setCurrentPlayer();
   }
 }
