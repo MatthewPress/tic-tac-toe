@@ -5,7 +5,7 @@ body {
   color: #FFFFFF;
 }
 
-/* Shared Flex Layouts */
+/* Shared Layouts */
 h1,
 article,
 .game {
@@ -81,7 +81,7 @@ button {
   cursor: not-allowed;
 }
 
-/* Extra Small Device Sizings */
+/* Extra Small Device (mobile) Rules */
 @media only screen and (max-width: 600px) {
   .game-grid {
     grid-gap: 10px;
